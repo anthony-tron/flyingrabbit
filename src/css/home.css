@@ -1,0 +1,64 @@
+/* content */
+
+.content {
+  display: grid;
+  gap: 8px;
+  grid-template:
+    "author" auto
+    "main-nav" auto
+    "." 1fr
+    "contact-nav" auto
+      / auto;
+
+  min-height: 100vh;
+}
+
+
+/* main nav */
+
+.main-nav {
+  grid-area: main-nav;
+  width: 100%;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li {
+  border: 1px solid grey;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+
+/* main footer */
+
+.main-footer {
+  grid-area: author;
+  width: 100%;
+}
+
+
+/* contact nav */
+
+.contact-nav {
+  grid-area: contact-nav;
+  width: 100%;
+}
+
+.contact-nav ul {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-nav ul li {
+  border: 1px solid grey;
+}
+
