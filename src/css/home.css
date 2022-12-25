@@ -33,6 +33,18 @@
   text-transform: uppercase;
 }
 
+.main-nav a {
+  display: block;
+  position: relative;
+}
+
+.main-nav a .small {
+  font-size: 67%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+}
+
 
 /* main footer */
 
