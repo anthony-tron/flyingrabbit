@@ -6,13 +6,19 @@
   grid-template:
     "author" auto
     "main-nav" auto
-    "." 1fr
+    "shadow" 1fr
     "contact-nav" auto
       / auto;
 
   min-height: 100vh;
 }
 
+
+.author-shadow {
+  align-self: end;
+  grid-area: shadow;
+  max-width: 100%;
+}
 
 /* main nav */
 
@@ -64,7 +70,7 @@
 .contact-nav ul {
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   list-style: none;
   margin: 0;
   padding: 0;
@@ -72,5 +78,69 @@
 
 .contact-nav ul li {
   border: 1px solid grey;
+}
+
+@media screen and (min-width: 480px) {
+  .main-nav {
+    background-image: url('/img/main-menu-books.png');
+    background-size: 100% 100%;
+
+    width: auto;
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    right: 0;
+    left: 55%;
+  }
+
+  .main-nav ul {
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+
+  .main-nav ul li {
+    border: none;
+  }
+
+  .contact-nav ul {
+    background-image: url('/img/contact-books.png');
+    background-size: 100% 100%;
+
+    position: absolute;
+    left: 20%;
+    right: 45%;
+    top: 15%;
+    bottom: 50%;
+
+    text-align: center;
+  }
+
+  .contact-nav a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .author-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 40%;
+  }
+
+  .about-link {
+    background-image: url('/img/author-portrait.png');
+    background-size: 100% 100%;
+
+    position: absolute;
+    top: 22%;
+    height: 30%;
+    left: 10%;
+    width: 12%;
+  }
+
+  .use-max-width {
+    max-width: 100%;
+  }
 }
 
