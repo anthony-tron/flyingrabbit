@@ -51,7 +51,7 @@
 }
 
 .main-nav a .small {
-  font-size: 67%;
+  font-size: 50%;
   left: 0;
   position: absolute;
   top: 100%;
@@ -87,12 +87,16 @@
 }
 
 @media screen and (min-width: 480px) {
+  a {
+    color: white;
+  }
+
   .main-nav {
     width: auto;
     position: absolute;
-    top: 15%;
+    top: 5%;
     bottom: 15%;
-    right: 0;
+    right: 15%;
     left: 55%;
   }
 
@@ -104,6 +108,10 @@
 
   .main-nav ul li {
     border: none;
+  }
+
+  .main-nav a {
+    font-size: 2rem;
   }
 
   .contact-nav ul {
