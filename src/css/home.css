@@ -1,6 +1,12 @@
 /* content */
 
 .content {
+  background-color: #431D37;
+  background-image: url('/img/home-screen.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
   display: grid;
   gap: 8px;
   grid-template:
@@ -82,9 +88,6 @@
 
 @media screen and (min-width: 480px) {
   .main-nav {
-    background-image: url('/img/main-menu-books.png');
-    background-size: 100% 100%;
-
     width: auto;
     position: absolute;
     top: 15%;
@@ -104,9 +107,6 @@
   }
 
   .contact-nav ul {
-    background-image: url('/img/contact-books.png');
-    background-size: 100% 100%;
-
     position: absolute;
     left: 20%;
     right: 45%;
@@ -129,14 +129,12 @@
   }
 
   .about-link {
-    background-image: url('/img/author-portrait.png');
-    background-size: 100% 100%;
-
     position: absolute;
-    top: 22%;
+    top: 30%;
     height: 30%;
-    left: 10%;
-    width: 12%;
+    left: 18%;
+    width: 10%;
+    border: 1px solid red;
   }
 
   .use-max-width {
